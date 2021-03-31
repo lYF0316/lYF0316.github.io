@@ -43,6 +43,8 @@ body{
     src: url('../fonts/comic sans ms.ttf'),
     url('../fonts/comic sans ms.ttf'); /* IE9 */
 }
+/*======================移动布局======================*/
+
 /*---------------------OUTTER BOX----------------------*/
 #main{
     -webkit-transition: 1s;
