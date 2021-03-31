@@ -18,6 +18,12 @@ body{
 	vertical-align: -6px;
 	font-size: 30px;
 }
+@font-face
+{
+    font-family: 方正姚体;
+    src: url('../fonts/方正姚体简体.TTF'),
+    url('../fonts/方正姚体简体.TTF'); /* IE9 */
+}
 
 /*---------------------OUTTER BOX----------------------*/
 #main{
