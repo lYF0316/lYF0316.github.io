@@ -46,7 +46,7 @@ body{
 /*======================移动布局======================*/
 @media only screen and (max-width: 500px) {
     body {
-        background-color: lightblue;
+        background-color: blue;
     }
 }
 /*---------------------OUTTER BOX----------------------*/
