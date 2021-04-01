@@ -704,6 +704,7 @@ let wrongNumPage2 = 0;
                         clearInterval(timer);
                         $(".nextPage").css("display","none");
                         alert("页面已锁定!入口已关闭！！");
+                        wordsYe = wordsMe();
                     }
                     wrongNumPage2--;
                 },1000);
