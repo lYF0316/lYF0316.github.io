@@ -993,6 +993,8 @@ function check(form) {
         return false;
     }else{
         wrongNumSy++;
+        if(wrongNumSy < 4){showMsg("烨：你已经输错了"+wrongNumSy+"次密钥了！");}
+        if(wrongNumSy < 2){time = setTimeout(function () {showMsg("烨：还不知道恋爱密钥？快去找我吧。。。");},1000);}
         if(wrongNumSy > 3){
             clearTimeout(time);
             clearInterval(wordsYeAngry);
@@ -1014,8 +1016,6 @@ function check(form) {
                 window.close();
             },5000);
         }
-        if(wrongNumSy < 4){showMsg("烨：你已经输错了"+wrongNumSy+"次密钥了！");}
-        if(wrongNumSy < 2){time = setTimeout(function () {showMsg("烨：还不知道恋爱密钥？快去找我吧。。。");},1000);}
         return false;
     }
 }
