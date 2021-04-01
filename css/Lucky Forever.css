@@ -784,6 +784,7 @@ body{
 }
 /*===标题栏===*/
 .alert-top-box{
+    font-size: 10rem;
     height: 50px;
     line-height: 50px;
     border-bottom: 1px dashed #ddd;
