@@ -44,7 +44,11 @@ body{
     url('../fonts/comic sans ms.ttf'); /* IE9 */
 }
 /*======================移动布局======================*/
-
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}
 /*---------------------OUTTER BOX----------------------*/
 #main{
     -webkit-transition: 1s;
