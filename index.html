@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1,
-minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge，chrome=1">
     <title>Lucky Forever</title>
     <link rel="shortcut icon" href="img/heart.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/Lucky%20Forever.css">
@@ -13,7 +11,8 @@ minimum-scale=1,maximum-scale=1,user-scalable=no" />
     <script>window.jQuery || document.write(unescape("%3Cscript src='js/jquery-1.12.4.min.js' type='text/javascript'%3E%3C/script%3E"));</script>
     <script src="js/ChenYeLuckyJs.js"></script>
     <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -217,7 +216,17 @@ minimum-scale=1,maximum-scale=1,user-scalable=no" />
     });
 </script>
 <script>
-
+    var fontSizeAuto = function (){
+        var viewportWidth = document.documentElement.clientWidth;
+        if(viewportWidth > 960){ viewportWidth = 1400; }
+        if(viewportWidth < 960 && viewportWidth > 640){ viewportWidth = 960; }
+        if(viewportWidth < 640 && viewportWidth > 320){ viewportWidth = 640; }
+        if(viewportWidth < 320 && viewportWidth > 180){ viewportWidth = 320; }
+        if(viewportWidth < 180 ){ viewportWidth = 180; }
+        document.documentElement.style.fontSize = viewportWidth/640 +'px';
+    }
+    fontSizeAuto();
+    window.onresize = fontSizeAuto;
 </script>
 </body>
 </html>
