@@ -972,7 +972,7 @@ function check(form) {
     if (!password || password == "") {
         showMsg("烨：干嘛呢？什么都不输入就想登进去？做梦去吧你.....");
         return false;
-    }else if (password === "20210412"||password === "2021.04.12"||password === "2021.4.12") {
+    }else if (password === "20210316"||password === "2021.03.16"||password === "2021.3.16") {
         clearInterval(wordsYeAngry);
         showMsg("烨：终于等到你了。Lucky Girl Is Coming!...");
         $(".enter").attr("disabled",true);
